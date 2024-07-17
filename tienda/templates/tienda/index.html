@@ -1,0 +1,297 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekkadan</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">   
+    <link rel="stylesheet" href="{% static 'tienda/css/style.css' %}">
+</head>
+<body>
+
+<!-- Comienzo del Header -->
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="{% static 'tienda/img/logo.webp' %}" alt="">
+    </a>
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="tienda.html">Tienda</a> 
+        <a href="#reseñas">Reseñas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    
+    <div class="iconos">
+        <div class="fas fa-search" id="buscar-btn"></div>
+        <div class="fas fa-shopping-cart" id="carta-btn"></div>
+        <div class="fas fa-user" id="user-btn"></div>        
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search_box" placeholder="busca aqui...">
+        <label for="search_box" class="fas fa-search"></label>
+    </div>
+
+<!-- carrito  -->    
+<div class="carta-items-container">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart" class="list-group"></ul>
+    <p>Total: $<span id="total">0.00</span></p>
+    <a href="#" class="btn">Comprar</a>
+</div>
+
+<!-- carrito -->
+
+</header>
+<!-- final del Header -->
+
+
+<!-- Inicio de inicio-->
+<section class="inicio" id="inicio">
+
+    <div class="content">
+    <h3>Grupo Zero</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae sequi ratione maxime, enim asperiores saepe accusamus repudiandae expedita praesentium </p>
+    <a href="#" class="btn"> Artes</a>
+    </div>  
+</section>
+<!-- final de inicio -->
+
+<!-- inicio de nosotros -->
+<section class="nosotros" id="nosotros">
+    <h1 class="heading"> <span>Sobre</span> Nosotros</h1>
+    <div class="row">
+        <div class="img">
+            <img src="{% static 'tienda/img/img-nosotros.jpg' %}" alt="">
+        </div>
+
+        <div class="content">
+            <h3>¿Que nos hace especial?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique asperiores amet dicta atque unde eum vero, nostrum hic quae cumque enim nesciunt harum voluptates repellendus debitis nam recusandae. Accusamus, nulla!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente itaque vitae sunt in voluptatem, excepturi reprehenderit dolore corporis eos quia exercitationem! Culpa aliquam asperiores, eligendi neque odit itaque nisi veritatis?</p>
+            <a href="#" class="btn">Leer más</a>
+        </div>
+    </div>
+</section>
+<!-- final de nosotros -->
+
+<!-- Inicio review -->
+<section class="reseñas"  id="reseñas">
+    
+    <h1 class="heading">Reseñas</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="" alt="" class="quote">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, corporis. Non, recusandae pariatur veniam dignissimos dicta nam maiores quos commodi facere perspiciatis accusamus amet iste incidunt, voluptatibus doloremque rem quidem?</p>
+            <img src="https://img.freepik.com/foto-gratis/mujer-bastante-joven-feliz-que-presenta-camara-parque-ciudad_1262-19158.jpg?w=1380&t=st=1719522525~exp=1719523125~hmac=0ad8114e5d8253c08c2b1fd6e291231e8e60b73ce267e1e3b4044eb3efbf8515" class="user" alt="">
+            <h3>Nombre persona1</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+        <div class="box">
+            <img src="" alt="" class="quote">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, corporis. Non, recusandae pariatur veniam dignissimos dicta nam maiores quos commodi facere perspiciatis accusamus amet iste incidunt, voluptatibus doloremque rem quidem?</p>
+            <img src="https://img.freepik.com/foto-gratis/mujer-sobre-fondo-rosa-cara-feliz-sonriendo-mirando-camara-persona-positiva_343596-4050.jpg?w=1380&t=st=1719522564~exp=1719523164~hmac=484419eee0299c7b77e77e2436a9e7151b3592f0bfdb5123503f6f186be29346" class="user" alt="">
+            <h3>Nombre persona2</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+                <img src="" alt="" class="quote">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, corporis. Non, recusandae pariatur veniam dignissimos dicta nam maiores quos commodi facere perspiciatis accusamus amet iste incidunt, voluptatibus doloremque rem quidem?</p>
+                <img src="https://img.freepik.com/foto-gratis/worldface-hombre-espanol-fondo-blanco_53876-139733.jpg?t=st=1719522582~exp=1719526182~hmac=a56c719d1d2142273c0be24193072e3a4be9a3115810a7553363f07c3aa963aa&w=1380" class="user" alt="">
+                <h3>Nombre persona3</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+        </div>
+           
+    </div>         
+</section>
+<!-- Final review-->
+
+<!-- inicio contacto-->
+ <section class="contacto" id="contacto">
+
+    <h1 class="heading"> Contacto</h1>
+
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.4549287309346!2d-71.61806352432613!3d-33.04448797355305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0d76107fd55%3A0x77baf68d119f6eeb!2sDUOC%20UC%20Sede%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1719513262221!5m2!1ses-419!2scl" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <h3>Nos Contactaremos con usted</h3>
+            <div class="inputbox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="nombre">
+            </div>
+            <div class="inputbox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputbox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="numero">
+            </div>
+            <input type="submit" value="contactar ahora" class="btn">
+        </form>
+
+    </div>
+
+ </section>
+<!-- final contacto-->
+
+<!-- inicio blogs-->
+<section class="blogs" id="blogs">
+
+    <h1 class="heading">Nuestros <span>blogs</span> </h1>
+    
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="https://artecontemporaneox.com/wp-content/uploads/2023/08/obras-de-arte-contemporaneo-3-1024x658.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="" class="title">Artes contemporaneas</a>
+                <span>Nombre Autor / 10-06-2024</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos illum dolorem est a porro necessitatibus voluptate corrupti impedit dolor?</p>
+                <a href="#" class="btn">Leer más</a>
+            </div>
+       </div>
+
+       <div class="box">
+        <div class="image">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/mondrian-yves-saint-laurent-2-1561472695.jpg?resize=980:*"  alt="">
+        </div>
+        <div class="content">
+            <a href="#" class="title">Arte y la Ropa</a>
+            <span>Nombre Autor / 10-06-2024</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos illum dolorem est a porro necessitatibus voluptate corrupti impedit dolor?</p>
+            <a href="#" class="btn">Leer más</a>
+        </div>
+        </div>
+
+        <div class="box">
+        <div class="image">
+        <img src="https://emprendedoresartistasycreativos.com/wp-content/uploads/2023/09/El_arte_contemporaneo-min-1024x847.jpg"  alt="">
+        </div>
+        <div class="content">
+        <a href="#" class="title">Artes Moderno</a>
+        <span>Nombre Autor / 10-06-2024</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos illum dolorem est a porro necessitatibus voluptate corrupti impedit dolor?</p>
+        <a href="#" class="btn">Leer más</a>
+        </div>
+    </div>
+</div>
+</section>
+<!-- final blogs-->
+
+<!-- inicio footer-->
+<section class="footer">
+    <div class="credit">
+        <div class="info">Horario de Atención:
+            <p>Lunes a viernes de 10:00am a 17:00pm.</p>
+            <b>-</b>
+        </div>
+        <div class="direccion">Dirección:
+            <p>Brasil 2021, Valparaíso.</p>
+        </div>
+
+    </div>
+
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-tiktok"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>       
+        <a href="#">Reseñas</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="credit">Creador por Franco Fernandez Duoc UC sede   Valparaiso
+
+    </div>
+
+
+</section>
+
+<!-- final footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="{% static 'tienda/js/script.js' %}"></script>
+
+</body>
+</html>

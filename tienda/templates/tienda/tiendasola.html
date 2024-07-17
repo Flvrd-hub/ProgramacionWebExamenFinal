@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">   
+    <link rel="stylesheet" href="{% static 'tienda/css/style.css' %}">
+</head>
+<body>
+
+    <!-- Comienzo del Header -->
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="{% static 'tienda/img/logo.webp' %}" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a> 
+        <a href="#reseñas">Reseñas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    
+    <div class="iconos">
+        <div class="fas fa-search" id="buscar-btn"></div>
+        <div class="fas fa-shopping-cart" id="carta-btn"></div>
+        <div class="fas fa-user" id="user-btn"></div>        
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search_box" placeholder="busca aqui...">
+        <label for="search_box" class="fas fa-search"></label>
+    </div>
+
+<!-- Carta arreglar con js para agregar items  -->    
+<div class="carta-items-container">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart" class="list-group"></ul>
+    <p>Total: $<span id="total">0.00</span></p>
+    <a href="#" class="btn">Comprar</a>
+</div>
+
+<!-- Arreglar con js para agregar items -->
+
+</header>
+<!-- final del Header -->
+
+<!--inicio tienda-->
+ 
+<section class="productosolo" id="productosolo">
+    <h1 class="heading">Arte <span>a la venta</span></h1>
+
+    <div class="box-container">
+
+  
+        <div class="item">
+
+            <section class="productoso" id="productoso">
+                <div class="row">
+                    <div class="img">
+                        <img src="{% static 'tienda/img/arteprueba.png' %}" alt="">
+                    </div>
+            
+                    <div class="content">
+                        <h3 class="titulo-item">Arte prueba</h3>
+                        <div class="precio">$29.000 CLP </div>
+                        <div class="autor">Autor Generico 1</div>
+                        <div class="est"> Estilo utilizado:</div>
+                        <div class="estilo">Lorem, ipsum dolor sit amet</div>
+                        <div class="desc">Descripción:</div>
+                        <div class="descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde minus quod explicabo laborum accusamus facere odio cum praesentium quibusdam repellendus enim nostrum modi, ipsa, blanditiis voluptatibus? Illo, porro ducimus.</div>
+
+                        <a href="tiendasola.html"><button class="boton-item">Comprar</button></h3></a>   
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+    
+    
+    
+    </div>
+
+
+
+
+</section>
+
+
+
+
+<!--Final tienda-->
+
+
+<!-- inicio footer-->
+<section class="footer">
+ 
+    <div class="credit">
+        <div class="info">Horario de Atención:
+            <p>Lunes a viernes de 10:00am a 17:00pm.</p>
+            <b>-</b>
+        </div>
+        <div class="direccion">Dirección:
+            <p>Brasil 2021, Valparaíso.</p>
+        </div>
+
+    </div>
+
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-tiktok"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>       
+        <a href="#">Reseñas</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="credit">Creador por Franco Fernandez Duoc UC sede   Valparaiso
+
+    </div>
+
+
+</section>
+
+<!-- final footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="{% static 'tienda/js/script.js' %}"></script>
+
+</body>
+</html>

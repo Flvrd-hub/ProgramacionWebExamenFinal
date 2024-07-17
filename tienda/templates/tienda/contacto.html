@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">   
+    <link rel="stylesheet" href="{% static 'tienda/css/style.css' %}">
+</head>
+<body>
+    <!-- Comienzo del Header -->
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="img/logo.webp" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="index.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a> 
+        <a href="#reseñas">Reseñas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="iconos">
+        <div class="fas fa-search" id="buscar-btn"></div>
+        <div class="fas fa-shopping-cart" id="carta-btn"></div>
+        <div class="fas fa-user" id="user-btn"></div>        
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search_box" placeholder="busca aqui...">
+        <label for="search_box" class="fas fa-search"></label>
+    </div>
+
+<!-- Carta arreglar con js para agregar items  -->    
+    <div class="carta-items-container">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart" class="list-group"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+<!-- Arreglar con js para agregar items -->
+
+</header>
+<!-- final del Header -->
+
+<!-- inicio de nosotros -->
+<section class="nosotros" id="nosotros">
+    <h1 class="heading"> <span>Sobre</span> Nosotros</h1>
+    <div class="row">
+        <div class="img">
+            <img src="{% static 'tienda/img/img-nosotros.jpg' %}" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Grupo Cero</h3>
+            <p>Un grupo de artistas plásticos dedicados a la pintura, escultura, orfebrería, tejido y otras expresiones 
+                artísticas, deciden formar una cooperativa llamada “Grupo Cero”. </p>
+            <p>El trabajo cooperativo que hacen les permite tener un taller y una sala de exhibición para sus trabajos. 
+                Además de la sala de exhibición de las obras, comparten un pequeño café que les sirve de lugar de 
+                reunión para atender a los clientes que solicitan trabajos especiales o que desean comprar alguna de 
+                las obras.</p>
+            <a href="#" class="btn">Leer más</a>
+        </div>
+    </div>
+</section>
+<!-- final de nosotros -->
+
+<!-- inicio contacto-->
+<section class="contacto" id="contacto">
+
+    <h1 class="heading"> Contacto</h1>
+
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.4549287309346!2d-71.61806352432613!3d-33.04448797355305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0d76107fd55%3A0x77baf68d119f6eeb!2sDUOC%20UC%20Sede%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1719513262221!5m2!1ses-419!2scl" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <h3>Nos Contactaremos con usted</h3>
+            <div class="inputbox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="nombre">
+            </div>
+            <div class="inputbox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputbox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="numero">
+            </div>
+            <input type="submit" value="contactar ahora" class="btn">
+        </form>
+
+    </div>
+
+ </section>
+<!-- final contacto-->
+
+
+    
+<!-- inicio footer-->
+<section class="footer">
+    <div class="credit">
+        <div class="info">Horario de Atención:
+            <p>Lunes a viernes de 10:00am a 17:00pm.</p>
+            <b>-</b>
+        </div>
+        <div class="direccion">Dirección:
+            <p>Brasil 2021, Valparaíso.</p>
+        </div>
+
+    </div>
+
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-tiktok"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>       
+        <a href="#">Reseñas</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="credit">Creador por Franco Fernandez Duoc UC sede   Valparaiso
+
+    </div>
+
+
+</section>
+
+<!-- final footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="{% static 'tienda/js/script.js' %}"></script>
+
+</body>
+</html>
